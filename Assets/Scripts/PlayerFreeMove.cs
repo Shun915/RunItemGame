@@ -26,7 +26,7 @@ public class PlayerFreeMove : MonoBehaviour
         //PlayerInputコンポーネントに設置されている現MAPは何かを取得＝(PlayerMap)
         InputActionMap actionMap = GetComponent<PlayerInput>().currentActionMap;
         moveAction = actionMap.FindAction("Move");
-        moveAction = actionMap.FindAction("Jump");
+        jumpAction = actionMap.FindAction("Jump");
     }
 
     void Update()
